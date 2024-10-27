@@ -1,0 +1,29 @@
+#search-input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: var(--current-line);
+    border: 1px solid var(--comment);
+    color: var(--foreground);
+    border-radius: 4px;
+}
+
+#search-input::placeholder {
+    color: var(--comment);
+}
+
+#search-results div {
+    background-color: var(--current-line);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+#search-results h3 {
+    color: var(--green);
+    margin-top: 0;
+}
+
+#search-results p {
+    color: var(--orange);
+}

@@ -1,0 +1,88 @@
+:root {
+    --background: #282a36;
+    --current-line: #44475a;
+    --foreground: #f8f8f2;
+    --comment: #6272a4;
+    --cyan: #8be9fd;
+    --green: #50fa7b;
+    --orange: #ffb86c;
+    --pink: #ff79c6;
+    --purple: #bd93f9;
+    --red: #ff5555;
+    --yellow: #f1fa8c;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    color: var(--purple);
+}
+
+.toolbar {
+    margin-bottom: 1rem;
+}
+
+.toolbar button {
+    background-color: var(--current-line);
+    color: var(--foreground);
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.toolbar button:hover {
+    background-color: var(--comment);
+}
+
+#editor {
+    border: 1px solid var(--comment);
+    min-height: 400px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--current-line);
+    color: var(--foreground);
+    border-radius: 4px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.actions button {
+    background-color: var(--purple);
+    color: var(--background);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-left: 1rem;
+}
+
+.actions button:hover {
+    background-color: var(--pink);
+}

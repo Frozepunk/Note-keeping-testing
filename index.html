@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inkly</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="write.html">Write</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="search.html">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to Inkly</h1>
+            <div id="featured-articles">
+                <!-- Featured articles will be dynamically added here -->
+            </div>
+        </section>
+
+        <section id="write" class="hidden">
+            <h2>Write Your Article</h2>
+            <div id="editor" contenteditable="true"></div>
+            <button id="save-draft">Save Draft</button>
+            <button id="publish">Publish</button>
+        </section>
+
+        <section id="profile" class="hidden">
+            <h2>User Profile</h2>
+            <div id="user-info">
+                <!-- User information will be dynamically added here -->
+            </div>
+            <div id="user-articles">
+                <!-- User's articles will be dynamically added here -->
+            </div>
+        </section>
+
+        <section id="search" class="hidden">
+            <h2>Search Articles</h2>
+            <input type="text" id="search-input" placeholder="Search by title or tag">
+            <div id="search-results">
+                <!-- Search results will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Inkly  Web App. All rights reserved.</p>
+    </footer>
+
+    <script src="Script/Script.js"></script>
+</body>
+</html>
